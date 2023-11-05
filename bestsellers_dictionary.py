@@ -27,6 +27,6 @@ for i in range(len(lists)):
     bestseller_list.append(lists[i].get('books')) #get only the books from the bestseller list
     for j in range(len(bestseller_list[i])):
         title = bestseller_list[i][j].get('title') #within the book list, get the title
-        description = bestseller_list[i][j].get('description').lower().split() #within the book list, get the description
+        description = bestseller_list[i][j].get('description').lower() #within the book list, get the description
         titles.append(title) #list of titles
         description_dict[title] = description #dictionary with title as key and description as value
